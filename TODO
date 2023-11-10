@@ -5,5 +5,5 @@ Main idea:
 * It would be aesthetically cool to not have any instructions; just drop the user into things and wait for them to press a key to stop the initial animation. And then it's on them to figure out WASD or arrow keys. (The tricky part about this is that only one direction works -- e.g. moving to the right... But hopefully they'll figure it out!)
 
 TODO:
-[ ] draw a single character to the screen
+[x] draw a single character to the screen
 [ ] print a string of characters to the screen
