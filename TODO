@@ -1,0 +1,9 @@
+Main idea:
+* Generate a random maze, and display it on the screen, using the line-drawing characters in the Apple II character set.
+* It probably makes sense to draw a "player" as well, and let them move through the maze from beginning to end. When they reach the end, start over with a new maze, to prove that we're generating them randomly. We can use the blinking text mode for the player, so they stand out (since we can't use colors in text mode).
+* A cool way to mask the janky randomness-collection of waiting for a keypress could be to animate a "the matrix"-style / slot-machine-style thing where the maze is 'randomly' reconfiguring in front of your eyes. And when you press a key, it selects either the current maze, or just generates your random maze and jumps to it. When you finish the first maze, it should animate a similar transition to the second maze, but not wait for a keypress. And when you move backwards through the start, it should take you to the previous mazes you've seen. (What should happen if you move backwards from the first maze? Perhaps this should be made impossible, with a wall.)
+* It would be aesthetically cool to not have any instructions; just drop the user into things and wait for them to press a key to stop the initial animation. And then it's on them to figure out WASD or arrow keys. (The tricky part about this is that only one direction works -- e.g. moving to the right... But hopefully they'll figure it out!)
+
+TODO:
+[ ] draw a single character to the screen
+[ ] print a string of characters to the screen
