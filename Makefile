@@ -1,3 +1,6 @@
+deploy: out/main.wav
+	cp $^ ~/Downloads
+
 out/main.wav: out/main
 	c2t -bc8 out/main,6000 out/main.wav
 
@@ -14,4 +17,4 @@ clean:
 	cargo clean
 
 .FORCE:
-.PHONY: clean .FORCE
+.PHONY: deploy clean .FORCE
